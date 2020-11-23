@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="display">0</div>
-        <div class="keys">
-            <button class="key-operator" action="add">+</button>
-            <button class="key-operator" action="subtract">-</button>
-            <button class="key-operator" action="multiply">x</button>
-            <button class="key-operator" action="divide">/</button>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="number">0</button>
-            <button action="decimal">.</button>
-            <button class="equal" action="calculate">=</button>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">0</div>
+            <div class="keys">
+                <div class="operation-keys">
+                    <button class="key-operator" action="add">+</button>
+                    <button class="key-operator" action="subtract">-</button>
+                    <button class="key-operator" action="multiply">x</button>
+                    <button class="key-operator" action="divide">/</button>
+                </div>
+                <div class="first-quarter">
+                    <button class="number one">1</button>
+                    <button class="number two">2</button>
+                    <button class="number three">3</button>
+                </div>
+                <div class="second-quarter">
+                    <button class="number four">4</button>
+                    <button class="number five">5</button>
+                    <button class="number six">6</button>
+                </div>
+                <div class="third-quarter">
+                    <button class="number seven">7</button>
+                    <button class="number eight">8</button>
+                    <button class="number nine">9</button>
+                </div>
+                <div class="fourth-quarter">
+                    <button class="number zero">0</button>
+                    <button class="decimal" action="decimal">.</button>
+                    <button class="equal" action="calculate">=</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
