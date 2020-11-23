@@ -1,0 +1,38 @@
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: darkcyan;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.calculator {
+    display: grid;
+    margin: 0 auto;
+    max-width: 250px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 8px;
+    grid-template-columns: 1fr;
+}
+
+.display {
+    size: 25%;
+    background-color:black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.keys {
+    background-color: rgb(231, 230, 230);
+}
+
+button {
+    background-color: rgb(231, 230, 230);
+    border: 1px solid rgb(165, 158, 158);
+}
