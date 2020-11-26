@@ -1,39 +1,64 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: normal;
+}
 
+/*add color to the body*/
 body {
-    background-color: black;
+    background: linear-gradient(to right, rgb(255, 162, 243), rgb(113, 103, 202));
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-    background-color: darkcyan;
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    padding: 60px;
-}
-
+/*style the main calculator body*/
 .calculator {
     display: grid;
+    align-content: center;
+    min-height: 100vh;
+    max-width: 300px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(70px, auto) repeat(5, 70px);
     margin: 0 auto;
-    max-width: 250px;
-    height: 500px;
-    border: 1px solid black;
-    border-radius: 8px;
-    grid-template-columns: 1fr;
+    padding-top: 20px;
 }
 
+/*style the buttons*/
+.calculator > button {
+    border: 1px solid rgb(187, 185, 185);
+    font-size: 2rem;
+    background: rgba(211, 211, 211);
+    outline: none;
+    cursor: pointer;
+}
+
+.calculator > button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.big-button {
+    grid-column: span 2;
+}
+
+/*style the display part*/
 .display {
-    size: 25%;
-    background-color:black;
+    grid-column: 1 / -1;
+    background-color:rgba(0, 0, 0, .75);
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
-.keys {
-    background-color: rgb(231, 230, 230);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+.previous-display {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
 }
 
-button {
-    background-color: rgb(231, 230, 230);
-    border: 1px solid rgb(165, 158, 158);
+.current-display {
+    color: rgba(255, 255, 255);
+    font-size: 2.5rem;
 }
